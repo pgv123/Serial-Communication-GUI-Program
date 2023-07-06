@@ -178,7 +178,7 @@ class qt(QMainWindow):
             #Start the progress bar
             self.completed = 0
             while self.completed < 100:
-                self.completed += 0.001
+                self.completed += 1
                 self.progressBar.setValue(self.completed)
             self.textEdit.setText('Data Gathering...')
             self.label_5.setText("CONNECTED!")
