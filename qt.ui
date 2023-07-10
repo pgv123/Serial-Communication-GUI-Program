@@ -304,6 +304,9 @@
       </layout>
      </item>
      <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+     <item>
       <widget class="QLabel" name="label_8">
        <property name="text">
         <string>Connection Percentage Status:</string>
@@ -316,9 +319,6 @@
         <number>24</number>
        </property>
       </widget>
-     </item>
-     <item>
-      <widget class="QTextEdit" name="textEdit"/>
      </item>
     </layout>
    </widget>
@@ -371,17 +371,17 @@
      <string>SEND</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QCheckBox" name="ck_AuSC">
     <property name="geometry">
      <rect>
-      <x>750</x>
+      <x>770</x>
       <y>430</y>
-      <width>141</width>
-      <height>31</height>
+      <width>121</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>github.com/mcagriaksoy</string>
+     <string>Copy Transfer</string>
     </property>
    </widget>
   </widget>

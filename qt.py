@@ -1,4 +1,4 @@
-__author__ = 'Mehmet Cagri Aksoy - github.com/mcagriaksoy'
+__author__ = 'AusSport Sboard Configurator V1.0'
 
 import sys, os, serial, serial.tools.list_ports, warnings
 from PyQt5.QtCore import *
@@ -55,7 +55,7 @@ class qt(QMainWindow):
         try:
             mytext = "\n"  # Send first enter
             global ser
-            ser = serial.Serial(self.cb_Port.currentText(), 115200, timeout=1)  # (ports[0], 115200)    #('COM1', 115200, timeout=1)
+            ser = serial.Serial(portname, 115200, timeout=1)  # (ports[0], 115200)    #('COM1', 115200, timeout=1)
             ser.write(mytext.encode())
         except:
             msgBox = QMessageBox()
@@ -173,7 +173,8 @@ class qt(QMainWindow):
 
         self.label_11.setText(ports[0])
         # Port Detection END
-
+        global portname
+        portname = ports[0]
         if ports[0] != 'NONE':
             #Start the progress bar
             self.completed = 0
