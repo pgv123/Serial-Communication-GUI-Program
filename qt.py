@@ -1,6 +1,7 @@
 __author__ = 'AusSport Sboard Configurator V1.0'
 
-import sys, os, serial, serial.tools.list_ports, warnings
+import sys, os, serial, warnings
+import serial.tools.list_ports
 from PyQt5.QtCore import *
 import time
 from PyQt5.QtWidgets import *
